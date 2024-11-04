@@ -3,12 +3,15 @@
 void main()
 
 {
-    int number = 0;
-    int count = 1;
-    while (count<=100)
+    int count, number, scanNumber;
+    printf("Enter Number\n");
+    scanf("%d",&scanNumber);
+    for(count = 0; count <= scanNumber; count ++)
     {
-        number = number+count;
-        count++;
+        for(number = 0; number <= count; number ++)
+        {
+            printf("*");
+        }
+        printf("\n");
     }
-    printf("The final number is %d",number);
 }

@@ -3,9 +3,9 @@
 void main()
 {
     int peach[10] = {1};
-    for (int number = 1; number <= 10; number++)
+    for (int count = 1; count <= 10; count++)
     {
-        peach[number] = (peach[number - 1] + 1) * 2;
+        peach[count] = (peach[count - 1] + 1) * 2;
     }
     for (int day = 10; day >= 1; day--)
     {

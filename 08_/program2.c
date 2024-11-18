@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 void bubble_sort(int arr[], int len)
 {
@@ -12,11 +11,14 @@ void bubble_sort(int arr[], int len)
                 arr[j + 1] = temp;
             }
 }
-int main()
+void main()
 {
-    int arr[8] = {};
+    int ArraySize;
+    printf("Enter the count\n");
+    scanf("%d", &ArraySize);
+    int arr[ArraySize] = {};
     printf("Enter Numbers\n");
-    for (int i = 0; i < 8; i++)
+    for (int i = 0; i < ArraySize; i++)
     {
         scanf("%d", &arr[i]);
     }
@@ -24,6 +26,5 @@ int main()
     bubble_sort(arr, len);
     int i;
     for (i = 0; i < len; i++)
-        printf("%d ", arr[i]);
-    return 0;
+        printf("%5d", arr[i]);
 }

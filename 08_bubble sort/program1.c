@@ -2,13 +2,13 @@
 
 void main()
 {
-    int arr[6][6];
+    int Array[6][6];
     for (int i = 0; i < 6; i++)
     {
         for (int j = 0; j < 6; j++)
         {
-            arr[i][j] = (i + j) * (i + j);
-            printf("%4d", arr[i][j]);
+            Array[i][j] = (i + j) * (i + j);
+            printf("%4d", Array[i][j]);
         }
         printf("\n");
     }

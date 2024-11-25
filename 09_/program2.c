@@ -7,9 +7,7 @@ void main()
     int Array_1[ArraySize] = {};
     printf("Enter Numbers\n");
     for (int i = 0; i < ArraySize; i++)
-    {
         scanf("%d", &Array_1[i]);
-    }
     printf("原始数组是:\n");
     for (int i = 0; i < ArraySize; i++)
         printf("%d ", Array_1[i]);

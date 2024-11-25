@@ -24,7 +24,6 @@ void main()
     }
     int len = sizeof(arr) / sizeof(arr[0]);
     bubble_sort(arr, len);
-    int i;
-    for (i = 0; i < len; i++)
+    for (int i = 0; i < len; i++)
         printf("%5d", arr[i]);
 }

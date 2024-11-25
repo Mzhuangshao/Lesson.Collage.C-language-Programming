@@ -1,14 +1,14 @@
 #include <stdio.h>
-void bubble_sort(int arr[], int len)
+void bubble_sort(int Array_1[], int len)
 {
-    int i, j, temp;
-    for (i = 0; i < len - 1; i++)
-        for (j = 0; j < len - 1 - i; j++)
-            if (arr[j] < arr[j + 1])
+    int x, z, temp;
+    for (z = 0; z < len - 1; z++)
+        for (x = 0; x < len - 1 - z; x++)
+            if (Array_1[x] < Array_1[x + 1])
             {
-                temp = arr[j + 1];
-                arr[j + 1] = arr[j];
-                arr[j] = temp;
+                temp = Array_1[x + 1];
+                Array_1[x + 1] = Array_1[x];
+                Array_1[x] = temp;
             }
 }
 void main()
@@ -16,15 +16,14 @@ void main()
     int ArraySize;
     printf("Enter the count\n");
     scanf("%d", &ArraySize);
-    int arr[ArraySize] = {};
+    int Array_1[ArraySize] = {};
     printf("Enter Numbers\n");
     for (int i = 0; i < ArraySize; i++)
     {
-        scanf("%d", &arr[i]);
+        scanf("%d", &Array_1[i]);
     }
-    int len = sizeof(arr) / sizeof(arr[0]);
-    bubble_sort(arr, len);
-    int i;
-    for (i = 0; i < len; i++)
-        printf("%5d", arr[i]);
+    int len = sizeof(Array_1) / sizeof(Array_1[0]);
+    bubble_sort(Array_1, len);
+    for (int i = 0; i < len; i++)
+        printf("%5d", Array_1[i]);
 }

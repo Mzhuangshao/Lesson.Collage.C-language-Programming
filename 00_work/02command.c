@@ -3,12 +3,12 @@
 void main()
 {
     double score[8][6] = {
-        {78, 36, 28, 65, 90, 89},
-        {100, 90, 34, 56, 87, 76},
-        {90, 92, 99, 87, 98, 86},
-        {87, 77, 88, 99, 76, 66},
-        {65, 78, 64, 74, 86, 95}};
-    printf("学号\t 语文\t 数学\t 英语\t 物理\t 化学\t 音乐\t 平均分\n");
+        {78, 76, 82, 75, 90},
+        {100, 90, 74, 76, 87},
+        {90, 92, 97, 87, 98},
+        {87, 77, 88, 96, 76},
+        {85, 78, 84, 74, 86}};
+    printf("学号\t 语文\t 数学\t 英语\t 物理\t 化学\t 平均分\n");
     for (int i = 0; i < 5; i++)
     {
         for (int j = 0; j < 5; j++)
@@ -37,27 +37,27 @@ void main()
     }
     for (int i = 0; i < 8; i++)
     {
-        if (i<5)
+        if (i < 5)
         {
-            printf("NO.%d\t",i+1);
+            printf("NO.%d\t", i + 1);
         }
-        else if (i==5)
+        else if (i == 5)
         {
             printf("总分\t");
         }
-        else if (i==6)
+        else if (i == 6)
         {
             printf("最高分\t");
         }
-        else if (i==7)
+        else if (i == 7)
         {
             printf("学号\t");
         }
         for (int j = 0; j < 6; j++)
         {
-            if(!(j==5&&(i==5||i==6||i==7)))
+            if (!(j == 5 && (i == 5 || i == 6 || i == 7)))
             {
-                printf("%.2lf\t",score[i][j]);
+                printf("%.2lf\t", score[i][j]);
             }
         }
         printf("\n");

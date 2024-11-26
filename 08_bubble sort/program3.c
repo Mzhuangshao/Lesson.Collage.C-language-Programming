@@ -23,7 +23,12 @@ void main()
         scanf("%d", &Array_1[i]);
     }
     int len = sizeof(Array_1) / sizeof(Array_1[0]);
+    int len_1 = sizeof(Array_1);
+    int len_2 = sizeof(Array_1[0]);
+    printf("len_1 = %d\n", len_1);
+    printf("len_2 = %d\n", len_2);
+    printf("len = %d\n", len);
     bubble_sort(Array_1, len);
     for (int i = 0; i < len; i++)
-        printf("%5d", Array_1[i]);
+        printf("%d   ", Array_1[i]);
 }

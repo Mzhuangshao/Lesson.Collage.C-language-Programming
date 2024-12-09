@@ -35,4 +35,5 @@ void selection_sort(int arr[], int len)
             if (arr[j] < arr[min])    // 找到目前最小值
                 min = j;              // 紀錄最小值
         swap(&arr[min], &arr[i]);     // 做交換
-    }}
+    }
+}

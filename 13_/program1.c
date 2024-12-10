@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int x1 = 30, x2 = 40;
 void swap(int x, int y)
 {

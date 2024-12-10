@@ -9,6 +9,7 @@ int main()
     printf("%d! = %ld", number, factorial(number));
     return 0;
 }
+
 long int factorial(int number)
 {
     if (number > 1)

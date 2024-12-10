@@ -1,9 +1,10 @@
 #include <stdio.h>
+//杨辉三角
 int main()
 {
     int rows, coef = 1, space, i, j;
 
-    printf("行数: ");
+    printf("输入行数: ");
     scanf("%d", &rows);
 
     for (i = 0; i < rows; i++)

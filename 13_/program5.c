@@ -7,10 +7,10 @@ static double score[8][6] = {
     {87, 77, 88, 96, 76},
     {85, 78, 84, 74, 86}};
 
-void agv();             //平均分
-void total_score();     //总分
-void max_score();       //最高分
-void display_list();    //显示
+void agv();          // 平均分
+void total_score();  // 总分
+void max_score();    // 最高分
+void display_list(); // 显示
 
 void main()
 {

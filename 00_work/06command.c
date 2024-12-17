@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 // 函数声明
-int stringCopy();
-int stringLen();
-int stringConnect();
+int stringCopy();       // 字符串复制
+int stringLen();        // 求字符串长度
+int stringConnect();    // 字符串首尾相连
 
 void main()
 {

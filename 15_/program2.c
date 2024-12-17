@@ -2,7 +2,12 @@
 
 void main()
 {
-    char *str = "Rua";
-    printf("%s\n",str);
-    char str1 = "ree";
+    char *names[] = {
+        "Zara Ali",
+        "Hina Ali",
+        "Nuha Ali",
+        "Sara Ali",
+    };
+    for (int i = 0; i < 4; i++)
+        printf("Value of names[%d] = %s\n", i, names[i]);
 }

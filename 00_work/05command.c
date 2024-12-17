@@ -1,7 +1,8 @@
 #include <stdio.h>
 
-void sort();
-void swap();
+// 函数声明
+void sort();    // 排序
+void swap();    // 交换 由‘排序’调用
 
 
 int main(void)
@@ -9,7 +10,9 @@ int main(void)
     int Array[10] = {};
     printf("Enter Numbers\n");
     for (int i = 0; i < 10; i++)
-        scanf("%d", &Array[i]);
+        scanf("%d", &Array[i]);  // 输入字符串
+    
+     // 排序
     sort(Array);
     for (int i = 0; i < 10; i++)
         printf("%d\t", Array[i]);

@@ -17,9 +17,8 @@ int main(void)
 
 void sort(int Array[])
 {
-    int x, z, temp;
-    for (z = 0; z < 10 - 1; z++)
-        for (x = 0; x < 10 - 1 - z; x++)
+    for (int z = 0; z < 10 - 1; z++)
+        for (int x = 0; x < 10 - 1 - z; x++)
             if (Array[x] > Array[x + 1])
                 swap(&Array[x], &Array[x + 1]);
 }

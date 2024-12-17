@@ -33,7 +33,7 @@ int stringLen(char *string1)    // 求字符串长度
 
 int stringCopy(char *string1, char *string2)    // 字符串复制
 {
-    while (*string1 != '\0')
+    while (*string1 != '\0')    // 把字符串string1写入string2
     {
         *string2 = *string1;
         string2++;
@@ -43,13 +43,13 @@ int stringCopy(char *string1, char *string2)    // 字符串复制
 
 int stringConnect(char *string1, char *string2, char *string3)  // 字符串首尾相连
 {
-    while (*string1 != '\0')
+    while (*string1 != '\0')    // 把字符串string1写入string3
     {
         *string3 = *string1;
         string1++;
         string3++;
     }
-    while (*string2 != '\0')
+    while (*string2 != '\0')    // 把字符串string2接在string3后面
     {
         *string3 = *string2;
         string2++;

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 void Q1();
 void Q2();
@@ -7,6 +8,10 @@ void Q5();
 void Q6();
 void Q7();
 void Q8();
+void Q9();
+void Q10();
+void Q11();
+void Q12();
 
 void main()
 {
@@ -23,7 +28,13 @@ void main()
     // printf("\n-------\n");
     // Q7();
     // printf("\n-------\n");
-    Q8();
+    // Q8();
+    // printf("\n-------\n");
+    // Q9();
+    // printf("\n-------\n");
+    // Q10();
+    // printf("\n-------\n");
+    Q11();
     printf("\n-------\n");
 }
 
@@ -100,14 +111,94 @@ void Q9()
 {
     char a, b, c;
     scanf("%c", &a);
-    if (90 >= a >= 65)
+    if (a >= 'a' && a <= 'z')
     {
-        b = a + 32;
+        b = a - 32;
         printf("%c", b);
     }
     else
     {
-        c = a - 32;
-        printf("%c,c");
+        c = a + 32;
+        printf("%c", c);
     }
+}
+
+void Q10()
+{
+    char ScanString[255], a[] = "sunny", b[] = "rainy";
+    gets(ScanString);
+    int result1 = strcmp(ScanString, a);
+    int result2 = strcmp(ScanString, b);
+    if (result1 == 0)
+        printf("\nplay");
+    else
+    {
+        if (result2 == 0)
+            printf("\nno play");
+        else
+            printf("\nbad");
+    }
+}
+
+void Q11()
+{
+    int ScanNumber;
+    printf("Enter Numbers: ");
+    scanf("%d", &ScanNumber);
+    switch (ScanNumber)
+    {
+    case 1:
+        printf("今天是星期一");
+        break;
+    case 2:
+        printf("今天是星期二");
+        break;
+    case 3:
+        printf("今天是星期三");
+        break;
+    case 4:
+        printf("今天是星期四");
+        break;
+    case 5:
+        printf("今天是星期五");
+        break;
+    case 6:
+        printf("今天是星期六");
+        break;
+    case 7:
+        printf("今天是星期日");
+        break;
+    default:
+    printf("不在有效范围内");
+        break;
+    }
+}
+
+void Q12()
+{
+    int 
+}
+
+void Q13()
+{
+    int count, number, scanNumber,space;
+    printf("Enter Number\n");
+    scanf("%d",&scanNumber);
+    for(count = 0; count <= scanNumber; count ++)
+    {
+        for (space = 1; space <= scanNumber - count; space++)
+            printf(" ");
+        for(number = 0; number <= count; number ++)
+            printf(" *");
+        printf("\n");
+    }
+}
+
+void Q14()
+{
+    do
+    {
+        /* code */
+    } while (/* condition */);
+    
 }

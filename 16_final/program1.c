@@ -10,19 +10,19 @@ void Q8();
 
 void main()
 {
-    printf("\n-------\n");
-    Q1();
-    printf("\n-------\n");
-    Q2();
-    printf("\n-------\n");
-    Q4();
-    printf("\n-------\n");
-    Q5();
-    printf("\n-------\n");
-    Q6();
-    printf("\n-------\n");
-    Q7();
-    printf("\n-------\n");
+    // printf("\n-------\n");
+    // Q1();
+    // printf("\n-------\n");
+    // Q2();
+    // printf("\n-------\n");
+    // Q4();
+    // printf("\n-------\n");
+    // Q5();
+    // printf("\n-------\n");
+    // Q6();
+    // printf("\n-------\n");
+    // Q7();
+    // printf("\n-------\n");
     Q8();
     printf("\n-------\n");
 }
@@ -86,9 +86,28 @@ void Q7()
 }
 void Q8()
 {
-    int ScanNumber, yes5, yes7, temp;
-    yes5 = ScanNumber / 5;
-    yes7 = ScanNumber / 7;
+    int ScanNumber, y1 = 0, y2 = 0;
     printf("Enter Numbers: ");
     scanf("%d", &ScanNumber);
+    int x1 = ScanNumber % 5, x2 = ScanNumber % 7;
+    if (x1 == 0 && x2 == 0)
+        printf("\nYES");
+    else
+        printf("\nNO");
+}
+
+void Q9()
+{
+    char a, b, c;
+    scanf("%c", &a);
+    if (90 >= a >= 65)
+    {
+        b = a + 32;
+        printf("%c", b);
+    }
+    else
+    {
+        c = a - 32;
+        printf("%c,c");
+    }
 }

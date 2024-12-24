@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 
 void Q1();
 void Q2();
@@ -12,6 +13,13 @@ void Q9();
 void Q10();
 void Q11();
 void Q12();
+void Q13();
+void Q14();
+void Q15();
+void Q16();
+void Q17();
+void Q18();
+void Q19();
 
 void main()
 {
@@ -33,9 +41,21 @@ void main()
     // Q9();
     // printf("\n-------\n");
     // Q10();
+    // // printf("\n-------\n");
+    // Q11();
     // printf("\n-------\n");
-    Q11();
+    // Q12();
+    // printf("\n-------\n");
+    // Q13();
+    // printf("\n-------\n");
+    // Q14();
+    // printf("\n-------\n");
+    // Q15();
+    // printf("\n-------\n");
+    Q16();
     printf("\n-------\n");
+    // Q14();
+    // printf("\n-------\n");
 }
 
 void Q1()
@@ -169,26 +189,25 @@ void Q11()
         printf("今天是星期日");
         break;
     default:
-    printf("不在有效范围内");
+        printf("不在有效范围内");
         break;
     }
 }
 
 void Q12()
 {
-    int 
 }
 
 void Q13()
 {
-    int count, number, scanNumber,space;
+    int count, number, scanNumber, space;
     printf("Enter Number\n");
-    scanf("%d",&scanNumber);
-    for(count = 0; count <= scanNumber; count ++)
+    scanf("%d", &scanNumber);
+    for (count = 0; count <= scanNumber; count++)
     {
         for (space = 1; space <= scanNumber - count; space++)
             printf(" ");
-        for(number = 0; number <= count; number ++)
+        for (number = 0; number <= count; number++)
             printf(" *");
         printf("\n");
     }
@@ -196,9 +215,64 @@ void Q13()
 
 void Q14()
 {
-    do
+    int ScanNumber, sum = 0, i = 1;
+    printf("Enter Number: \n");
+    scanf("%d", &ScanNumber);
+    if (ScanNumber <= -1)
+        printf("Wrong Number");
+    else
     {
-        /* code */
-    } while (/* condition */);
+        do
+        {
+            if (i % 2 != 0)
+                sum += i;
+            i++;
+        } while (i <= ScanNumber);
+        printf("\n%d", sum);
+    }
+}
+
+void Q15()
+{
+    int ScanNumber, sum = 1;
+    printf("Enter Number: \n");
+    scanf("%d", &ScanNumber);
+    while (ScanNumber)
+    {
+        if (ScanNumber > 1)
+            sum += pow(ScanNumber, 2);
+        ScanNumber--;
+    }
+    printf("\n%d", sum);
+}
+
+void Q16()
+{
+    int ScanNumber, OddNum = 0, EvenNum = 0, i = 1, j = 1, OddS = 0, EvenS = 0;
+    printf("Enter Number: \n");
+    scanf("%d", &ScanNumber);
+    if (ScanNumber <= -1)
+        printf("Wrong Number");
+    else
+    {
+        while (i <= ScanNumber)
+        {
+            if (i % 2 != 0)        // 判断i是否为奇数
+                OddS += pow(i, 2); // 平方运算
+            i++;
+        }
+        printf("\nOdds %d", OddS);
+        while (j <= ScanNumber)
+        {
+            if (j % 2 == 0)         // 判断j是否为偶数
+                EvenS += pow(j, 3); // 立方运算
+            j++;
+        }
+        printf("\nevens %d", EvenS);
+    }
+}
+
+void Q17()
+{
     
 }

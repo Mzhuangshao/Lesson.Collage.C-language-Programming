@@ -23,39 +23,37 @@ void Q19();
 
 void main()
 {
-    // printf("\n-------\n");
-    // Q1();
-    // printf("\n-------\n");
-    // Q2();
-    // printf("\n-------\n");
-    // Q4();
-    // printf("\n-------\n");
-    // Q5();
-    // printf("\n-------\n");
-    // Q6();
-    // printf("\n-------\n");
-    // Q7();
-    // printf("\n-------\n");
-    // Q8();
-    // printf("\n-------\n");
-    // Q9();
-    // printf("\n-------\n");
-    // Q10();
-    // // printf("\n-------\n");
-    // Q11();
-    // printf("\n-------\n");
-    // Q12();
-    // printf("\n-------\n");
-    // Q13();
-    // printf("\n-------\n");
-    // Q14();
-    // printf("\n-------\n");
-    // Q15();
-    // printf("\n-------\n");
+    printf("\n-------\n");
+    Q1();
+    printf("\n-------\n");
+    Q2();
+    printf("\n-------\n");
+    Q4();
+    printf("\n-------\n");
+    Q5();
+    printf("\n-------\n");
+    Q6();
+    printf("\n-------\n");
+    Q7();
+    printf("\n-------\n");
+    Q8();
+    printf("\n-------\n");
+    Q9();
+    printf("\n-------\n");
+    Q10();
+    printf("\n-------\n");
+    Q11();
+    printf("\n-------\n");
+    Q12();
+    printf("\n-------\n");
+    Q13();
+    printf("\n-------\n");
+    Q14();
+    printf("\n-------\n");
+    Q15();
+    printf("\n-------\n");
     Q16();
     printf("\n-------\n");
-    // Q14();
-    // printf("\n-------\n");
 }
 
 void Q1()
@@ -65,7 +63,7 @@ void Q1()
 void Q2()
 {
     int ScanNumber;
-    printf("Enter Numbers: ");
+    printf("输入一个数: ");
     scanf("%d", &ScanNumber);
     printf("\nYour Enter is : %d", ScanNumber);
 }
@@ -118,11 +116,11 @@ void Q7()
 void Q8()
 {
     int ScanNumber, y1 = 0, y2 = 0;
-    printf("Enter Numbers: ");
+    printf("(5和7倍数判断)输入一个数 ");
     scanf("%d", &ScanNumber);
     int x1 = ScanNumber % 5, x2 = ScanNumber % 7;
     if (x1 == 0 && x2 == 0)
-        printf("\nYES");
+        printf("\n这个数是5和7的倍数");
     else
         printf("\nNO");
 }
@@ -130,6 +128,7 @@ void Q8()
 void Q9()
 {
     char a, b, c;
+    printf("输入一个字母:");
     scanf("%c", &a);
     if (a >= 'a' && a <= 'z')
     {
@@ -146,6 +145,7 @@ void Q9()
 void Q10()
 {
     char ScanString[255], a[] = "sunny", b[] = "rainy";
+    printf("sunny or rainy ");
     gets(ScanString);
     int result1 = strcmp(ScanString, a);
     int result2 = strcmp(ScanString, b);
@@ -163,7 +163,7 @@ void Q10()
 void Q11()
 {
     int ScanNumber;
-    printf("Enter Numbers: ");
+    printf("输入一个星期数: ");
     scanf("%d", &ScanNumber);
     switch (ScanNumber)
     {
@@ -196,12 +196,21 @@ void Q11()
 
 void Q12()
 {
+    int result = 0;
+    for (int i = 1; i <= 4; i++)
+        for (int j = 1; j <= 4; j++)
+            for (int k = 1; k <= 4; k++)
+                if ((i != j) && (j != k) && (i != k))
+                {
+                    result = i * 100 + j * 10 + k;
+                    printf("%10d", result);
+                }
 }
 
 void Q13()
 {
     int count, number, scanNumber, space;
-    printf("Enter Number\n");
+    printf("输入层数\n");
     scanf("%d", &scanNumber);
     for (count = 0; count <= scanNumber; count++)
     {
@@ -216,10 +225,10 @@ void Q13()
 void Q14()
 {
     int ScanNumber, sum = 0, i = 1;
-    printf("Enter Number: \n");
+    printf("1到N所有奇数和\nEnter Number:");
     scanf("%d", &ScanNumber);
     if (ScanNumber <= -1)
-        printf("Wrong Number");
+        printf("\nWrong Number");
     else
     {
         do
@@ -235,7 +244,7 @@ void Q14()
 void Q15()
 {
     int ScanNumber, sum = 1;
-    printf("Enter Number: \n");
+    printf("1到N所有整数平方和Enter Number: \n");
     scanf("%d", &ScanNumber);
     while (ScanNumber)
     {
@@ -249,7 +258,7 @@ void Q15()
 void Q16()
 {
     int ScanNumber, OddNum = 0, EvenNum = 0, i = 1, j = 1, OddS = 0, EvenS = 0;
-    printf("Enter Number: \n");
+    printf("1到N所有奇数平方和 所有偶数立方和Enter Number: \n");
     scanf("%d", &ScanNumber);
     if (ScanNumber <= -1)
         printf("Wrong Number");
@@ -270,9 +279,4 @@ void Q16()
         }
         printf("\nevens %d", EvenS);
     }
-}
-
-void Q17()
-{
-    
 }

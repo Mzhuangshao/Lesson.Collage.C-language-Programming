@@ -20,37 +20,8 @@ void Q16();
 
 void main()
 {
-    // printf("\n-------\n");
-    // Q1();
-    // printf("\n-------\n");
-    // Q2();
-    // printf("\n-------\n");
-    // Q4();
-    // printf("\n-------\n");
-    // Q5();
-    // printf("\n-------\n");
-    // Q6();
     printf("\n-------\n");
-    Q7();
-    printf("\n-------\n");
-    // Q8();
-    // printf("\n-------\n");
-    // Q9();
-    // printf("\n-------\n");
-    // Q10();
-    // printf("\n-------\n");
-    // Q11();
-    // printf("\n-------\n");
-    // Q12();
-    // printf("\n-------\n");
-    // Q13();
-    // printf("\n-------\n");
-    // Q14();
-    // printf("\n-------\n");
-    // Q15();
-    // printf("\n-------\n");
-    // Q16();
-    // printf("\n-------\n");
+    Q5();
 }
 
 void Q1()
@@ -76,17 +47,15 @@ void Q4()
 
 void Q5()
 {
-    float r, h, pi = 3.14;
+    float r, h;
     printf("\nEnter Value r and h: ");
     scanf("%f %f", &r, &h);
-    float Circumference, CircleArea, BallSurfaceArea, BallVolume, CylinderVolume;
-    Circumference = 2 * pi * r;            // 圆周长
-    CircleArea = r * r * pi;               // 圆面积
-    BallSurfaceArea = 4 * pi * r * r;      // 球表面积
-    BallVolume = 4 * pi * r * r * r / 3.0; // 球体积
-    CylinderVolume = CircleArea * h;       // 圆柱体积
-    // printf("\nEnter Value h: ");
-    // scanf("%.2f", &h);
+    float pi = 3.14,
+          Circumference = 2 * pi * r,          // 圆周长
+        CircleArea = r * r * pi,               // 圆面积
+        BallSurfaceArea = 4 * pi * r * r,      // 球表面积
+        BallVolume = 4 * pi * r * r * r / 3.0, // 球体积
+        CylinderVolume = CircleArea * h;       // 圆柱体积
     printf("\n圆周长是%.2f  圆面积是%.2f  球表面积是%.2f  球体积是%.2f  圆柱体积是%.2f  ", Circumference, CircleArea, BallSurfaceArea, BallVolume, CylinderVolume);
 }
 
